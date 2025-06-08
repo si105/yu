@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>周末争夺战：县域中学与省重点的"5+2"生存实录</title>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <!-- ECharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 主标题 -->
+      <header class="main-header">
+        <h1>周末争夺战：县域中学与省重点的"5+2"生存实录</h1>
+        <div class="header-decoration"></div>
+      </header>
+
+      <!-- 第一部分：引言 -->
+      <section class="section intro-section">
+        <h2 class="section-title">一、引言</h2>
+
+        <!-- 故事引入 -->
+        <div class="story-intro">
+          <h3>故事引入</h3>
+          <div class="story-card-container">
+            <div class="story-card" id="liuStoryCard">
+              <div class="story-image-container">
+                <img
+                  src="images/A故事1.png"
+                  alt="小刘的故事"
+                  class="story-image" />
+                <div class="story-overlay">
+                  <div class="story-preview">
+                    <h5>小刘的教育投资</h5>
+                    <p>一个收废品父亲的十万补课费</p>
+                    <button class="story-btn">点击查看详情</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 政策时间轴 -->
+        <div class="policy-timeline">
+          <h3>政策时间轴</h3>
+          <div class="timeline-container">
+            <div class="horizontal-timeline">
+              <div class="timeline-line"></div>
+              
+              <div class="timeline-point" data-year="2000" data-index="0">
+                <div class="point-circle"></div>
+                <div class="point-year">2000年</div>
+              </div>
+
+              <div class="timeline-point" data-year="2006" data-index="1">
+                <div class="point-circle"></div>
+                <div class="point-year">2006年</div>
+              </div>
+
+              <div class="timeline-point" data-year="2021" data-index="2">
+                <div class="point-circle"></div>
+                <div class="point-year">2021年</div>
+              </div>
+
+              <div class="timeline-point" data-year="2024" data-index="3">
+                <div class="point-circle"></div>
+                <div class="point-year">2024年</div>
+              </div>
+
+              <div class="timeline-point highlight" data-year="2025" data-index="4">
+                <div class="point-circle"></div>
+                <div class="point-year">2025年</div>
+              </div>
+            </div>
+
+            <!-- 时间轴详细内容滑出区域 -->
+            <div class="timeline-details" id="timelineDetails">
+              <div class="details-content">
+                <button class="close-details">×</button>
+                <h4 id="detailsTitle"></h4>
+                <p id="detailsContent"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 目的部分 -->
+        <div class="purpose-section">
+          <h3>目的</h3>
+          <div class="purpose-content">
+            <div class="purpose-text">
+              <p class="highlight-text">
+                双休政策并未真正实现教育公平，反而成为了一种新的资源筛选机制，加剧了阶层固化。
+              </p>
+
+              <p>
+                北京某重点中学调研显示，高知家庭子女周末参与科研、国际竞赛的比例升至47%，而务工人员子女则有32%在快餐店兼职，21%处于"放养"状态。
+              </p>
+
+              <p>
+                重点大学生源地域分布显示，县域高中仅占21.9%，杭州某区双休后补课费用上涨40%，湖南省高中平均每周补课仍达12小时。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- "分数至上"部分 -->
+        <div class="score-supremacy-section">
+          <h3>"分数至上"的含义</h3>
+          <div class="text-content">
+            <p>
+              "分数至上"是指在教育过程中，将分数作为衡量学生能力、价值和未来发展的唯一标准。这种观念将教育简化为"分数竞争"，忽视了学生在德、智、体、美、劳等方面的全面发展。分数被视为衡量学生是否"成功"的唯一指标，甚至成为家长、教师、学校和社会评价学生和教育质量的唯一标准。这种观念不仅存在于学校教育中，也渗透到家庭教育和社会评价体系中，形成了一种"唯分数论"的文化氛围。
+            </p>
+          </div>
+
+          <div class="harm-section">
+            <h4>"分数至上"的危害</h4>
+            <div class="harm-points">
+              <div class="harm-item">
+                <strong>1）加剧学生心理压力与焦虑</strong>
+              </div>
+              <div class="harm-item">
+                <strong>
+                  2）长期处于高压环境下，学生容易产生焦虑、抑郁等心理问题。"分数至上"观念导致的心理失衡和价值观扭曲
+                </strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-studies">
+            <h4>具体故事案例</h4>
+
+            <div class="case-cards-container">
+              <div class="case-card" id="shizhongyingCard">
+                <div class="case-image-container">
+                  <img
+                    src="images/A石中英.png"
+                    alt="石中英案例"
+                    class="case-image" />
+                  <div class="case-overlay">
+                    <div class="case-preview">
+                      <h5>石中英案例</h5>
+                      <p>分数之上的价值观教育缺失</p>
+                      <button class="case-btn">点击查看详情</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-card" id="teacherStressCard">
+                <div class="case-image-container">
+                  <img
+                    src="images/A教师高压.png"
+                    alt="教师高压环境"
+                    class="case-image" />
+                  <div class="case-overlay">
+                    <div class="case-preview">
+                      <h5>教师高压环境</h5>
+                      <p>郴州体罚事件背后的畸形心态</p>
+                      <button class="case-btn">点击查看详情</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-card" id="yuXingjianCard">
+                <div class="case-image-container">
+                  <img
+                    src="images/A于行健.png"
+                    alt="于行健事件"
+                    class="case-image" />
+                  <div class="case-overlay">
+                    <div class="case-preview">
+                      <h5>于行健事件</h5>
+                      <p>当父母的爱变成驯化实验</p>
+                      <button class="case-btn">点击查看详情</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 双休vs非双休部分 -->
+        <div class="weekend-comparison-section">
+          <h3>双休vs非双休</h3>
+
+          <div class="research-findings">
+            <div class="research-item">
+              <p>
+                乌鲁木齐市的一项研究也显示，政策实施后，学生的抑郁和焦虑检测率分别从10.08%和15.23%下降至6.06%和10.62%。这些数据表明，减少作业和课外培训确实有助于缓解学生的心理压力。《"双减"政策背景下乌鲁木齐中小学生抑郁和焦虑情绪现状》
+              </p>
+            </div>
+
+            <div class="research-item">
+              <p>
+                另一项研究也显示，政策实施后，学生的抑郁和焦虑水平分别从9.9%和7.4%下降至9.4%和7.1%。《Evaluating
+                the Effectiveness of the Double Reduction Policy in Alleviating
+                Student Pressure》
+              </p>
+            </div>
+          </div>
+
+          <div class="comparison-details">
+            <h4>1. 抑郁检出率对比</h4>
+            <div class="content-with-image">
+              <div class="text-content">
+                <p>
+                  在未实施双休的高中，持续补课的学生群体中，高三抑郁检出率比双休制学校高出23%。
+                </p>
+                <p>
+                  根据《2023年度中国精神心理健康》蓝皮书，全国高中生抑郁检出率高达40%，而双休试点学校（如浙江新密市第一高级中学）观察到学生"眼里有光"，心理健康水平提升。
+                </p>
+              </div>
+              <div class="image-container">
+                <img
+                  src="images/A抑郁检出率对比.png"
+                  alt="抑郁检出率对比图"
+                  class="content-image" />
+              </div>
+            </div>
+
+            <h4>2. 自主性与幸福感提升</h4>
+            <div class="content-with-image">
+              <div class="text-content">
+                <p>
+                  双休政策下，学生自主安排时间的能力增强。例如，杭州某高中试点后，学生创造力提升23%，课堂互动积极性显著提高。
+                </p>
+                <p>
+                  深圳"双减"后的寒假案例显示，学生因自由时间增加，快乐指数和家庭幸福指数均上升，亲子关系改善。
+                </p>
+              </div>
+              <div class="image-container">
+                <img
+                  src="images/A自主性.png"
+                  alt="学生自主性提升图"
+                  class="content-image" />
+              </div>
+            </div>
+
+            <h4>二、睡眠与生理健康改善</h4>
+
+            <h5>1. 睡眠时长增加</h5>
+            <div class="content-with-image">
+              <div class="text-content">
+                <p>
+                  湖南省教育厅统计显示，未实施双休的学校中，重点中学学生日均睡眠不足6小时，而双休制推行后，部分学校取消早读和晚自习，学生周末睡眠时间延长至8小时以上。
+                </p>
+                <p>
+                  山东泰安某高中试点双休后，学生周末可多睡约1小时，生理疲劳感降低。
+                </p>
+              </div>
+              <div class="image-container">
+                <img
+                  src="images/A睡眠.png"
+                  alt="学生睡眠情况改善图"
+                  class="content-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 第二部分：双休政策下教育鸿沟 -->
+      <section class="section policy-gap-section">
+        <h2 class="section-title">
+          二、双休政策下教育鸿沟：谁在"躺平"，谁在"抢跑"
+        </h2>
+
+        <!-- 政策落实情况差异 -->
+        <div class="policy-implementation">
+          <h3>一、双休政策落实情况差异</h3>
+          <p class="intro-text">四川省地图显示各地区政策执行情况对比</p>
+
+          <div class="policy-cases">
+            <div class="policy-case success-case">
+              <div class="case-header">
+                <span class="case-number">1.</span>
+                <span class="case-status success">积极执行</span>
+              </div>
+              <div class="case-content-grid">
+                <div class="case-text">
+                  <h4>温江某公办高中</h4>
+                  <p>
+                    每周五下午6:00学生离校，每周日下午6:00返校。（积极执行双休政策）
+                  </p>
+                </div>
+                <div class="case-image">
+                  <img
+                    src="images/B高中通知.png"
+                    alt="温江高中双休政策通知"
+                    class="policy-image clickable-image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="policy-case good-case">
+              <div class="case-header">
+                <span class="case-number">2.</span>
+                <span class="case-status good">较好实行</span>
+              </div>
+              <div class="case-content-grid">
+                <div class="case-text">
+                  <h4>新都高中</h4>
+                  <p>
+                    是否施行周末双休，官方回复：周末实行双休，学生可自愿根据需要到校学习。
+                  </p>
+                </div>
+                <div class="case-image">
+                  <img
+                    src="images/B官方回复.png"
+                    alt="新都高中官方回复"
+                    class="policy-image clickable-image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="policy-case partial-case">
+              <div class="case-header">
+                <span class="case-number">3.</span>
+                <span class="case-status partial">未准确执行</span>
+              </div>
+              <div class="case-content-grid">
+                <div class="case-text">
+                  <h4>开江中心和开江二中</h4>
+                  <p>每周只放半天假（未准确执行）</p>
+                </div>
+                <div class="case-image">
+                  <img
+                    src="images/B开江中心.png"
+                    alt="开江中心政策执行情况"
+                    class="policy-image clickable-image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="policy-case failed-case">
+              <div class="case-header">
+                <span class="case-number">4.</span>
+                <span class="case-status failed">未执行</span>
+              </div>
+              <div class="case-content-grid">
+                <div class="case-text">
+                  <h4>蓬溪中学</h4>
+                  <p>不执行双休政策（未执行）</p>
+                </div>
+                <div class="case-image">
+                  <img
+                    src="images/B蓬溪中学.png"
+                    alt="蓬溪中学政策执行情况"
+                    class="policy-image clickable-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 政策实施对比图表 -->
+          <div class="policy-comparison-chart">
+            <h4>政策实施情况对比</h4>
+            <div class="chart-container interactive-chart">
+              <!-- 切换按钮 -->
+              <div class="chart-controls">
+                <button
+                  id="provincialBtn"
+                  class="chart-btn active"
+                  data-type="provincial">
+                  <span class="btn-icon">🏫</span>
+                  省重点中学
+                </button>
+                <button
+                  id="countyBtn"
+                  class="chart-btn"
+                  data-type="county">
+                  <span class="btn-icon">🎓</span>
+                  县域中学
+                </button>
+              </div>
+
+              <!-- ECharts雷达图容器 -->
+              <div
+                id="radarChart"
+                style="width: 100%; height: 500px"></div>
+
+              <!-- 数据说明 -->
+              <div class="chart-description">
+                <div class="desc-item">
+                  <strong>政策执行力度：</strong>
+                  学校对双休政策的实际执行程度
+                </div>
+                <div class="desc-item">
+                  <strong>学生满意度：</strong>
+                  学生对双休政策的满意程度
+                </div>
+                <div class="desc-item">
+                  <strong>家长认可度：</strong>
+                  家长对双休政策的认可程度
+                </div>
+                <div class="desc-item">
+                  <strong>教师配合度：</strong>
+                  教师对双休政策的配合程度
+                </div>
+                <div class="desc-item">
+                  <strong>实际效果：</strong>
+                  双休政策的实际实施效果
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 数据图表展示 -->
+        <div class="data-charts-section">
+          <h3>二、数据图表：家庭教育投入与地区差异分析</h3>
+
+          <!-- 图表1：四川不同地区家长对于双休政策的观点对比 -->
+          <div class="chart-container-wrapper">
+            <h4>四川不同地区家长对于双休政策的观点对比</h4>
+            <div
+              id="regionOpinionChart"
+              class="chart-container"
+              style="width: 100%; height: 400px"></div>
+          </div>
+
+          <!-- 图表2：成都小学一年级班级家庭结构分布 -->
+          <div class="chart-container-wrapper">
+            <h4>成都小学一年级班级家庭结构分布</h4>
+            <div class="chart-row">
+              <div
+                id="familyStructureChart"
+                class="chart-container"
+                style="width: 50%; height: 400px"></div>
+              <div class="chart-info">
+                <h5>成都小学一年级班级二胎家庭比例</h5>
+                <div class="percentage-display">30.9% - 70.6%</div>
+                <h6>二胎家庭特点</h6>
+                <ul>
+                  <li>二胎家庭的教育投入通常比一胎家庭更高</li>
+                  <li>需要更多关注孩子的学习和行为习惯</li>
+                  <li>教育投入更加细致和全面</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 图表3：2019-2022年教育经费投入趋势 -->
+          <div class="chart-container-wrapper">
+            <h4>2019-2022年教育经费投入趋势</h4>
+            <div class="chart-row">
+              <div
+                id="educationInvestmentChart"
+                class="chart-container"
+                style="width: 60%; height: 400px"></div>
+              <div class="chart-info">
+                <h5>2021年教育经费投入</h5>
+                <ul>
+                  <li>
+                    <strong>总投入：</strong>
+                    2816.91亿元
+                  </li>
+                  <li>
+                    <strong>同比增长：</strong>
+                    4.75%
+                  </li>
+                </ul>
+                <h6>普通高中经费标准</h6>
+                <ul>
+                  <li>
+                    <strong>生均一般公共预算教育经费：</strong>
+                    14514.94元
+                  </li>
+                  <li>
+                    <strong>生均公用经费：</strong>
+                    3140.92元
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 图表4：不同收入家庭教育支出占比 -->
+          <div class="chart-container-wrapper">
+            <h4>不同收入家庭教育支出占收入比例</h4>
+            <div
+              id="incomeEducationChart"
+              class="chart-container"
+              style="width: 100%; height: 450px"></div>
+            <div class="chart-note">
+              <p>
+                <strong>数据说明：</strong>
+                数据来源于2022年城镇家庭调研，显示了不同收入等级家庭的年均教育支出金额和占收入比例。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 学校政策执行 -->
+        <div class="school-policy-section">
+          <h3>三、学校政策执行：文件里的"减负"与现实中的"加码"</h3>
+
+          <!-- 文件里的减负 -->
+          <div class="official-policy">
+            <h4>文件里的"减负"</h4>
+
+            <div class="policy-document">
+              <div class="doc-header">
+                <div class="doc-icon">📄</div>
+                <div class="doc-info">
+                  <h5>四川省基础教育学校规范管理二十条措施</h5>
+                  <p class="doc-date">2025年2月 四川省教育厅</p>
+                </div>
+              </div>
+
+              <div class="doc-content">
+                <div class="regulation-item">
+                  <h6>第一条"规范教学行为"第4点：严禁违规补课</h6>
+                  <ul>
+                    <li>
+                      严禁学校违反教育主管部门统一规定的校历提前开学、延迟放假
+                    </li>
+                    <li>
+                      严禁利用双休日、节假日、寒暑假组织学生集体补课或上新课
+                    </li>
+                    <li>
+                      确因设置中考、高考、学考等考点耽误的课时，需报教育主管部门审批备案
+                    </li>
+                    <li>
+                      严禁中小学为社会各类补习班、培训班提供教学设施或场地
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 政策背景与目标 -->
+            <div class="policy-background">
+              <h5>政策背景与目标</h5>
+              <div class="background-text">
+                <p>
+                  《教育强国规划纲要》强调，当前中国高中生普遍面临较大的学习压力，平均睡眠时间不足6.5小时，且青少年抑郁检出率高达40%。长期高强度的学习不仅影响学生的身心健康，也限制了其全面发展。
+                </p>
+              </div>
+
+              <div class="policy-goals-chart">
+                <h6>政策的核心目标</h6>
+                <div
+                  id="policyGoalsChart"
+                  class="chart-container"
+                  style="width: 100%; height: 500px"></div>
+                <div class="goals-description">
+                  <p>
+                    双休政策通过四个核心目标的协同作用，构建更加人性化和科学的教育生态系统，促进学生身心健康发展。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 四川省政策实施情况 -->
+            <div class="sichuan-implementation">
+              <h5>四川省政策实施情况</h5>
+
+              <div class="implementation-details">
+                <div class="impl-section">
+                  <h6>实施范围与时间</h6>
+                  <div class="impl-grid">
+                    <div class="impl-item">
+                      <strong>实施范围：</strong>
+                      四川省内所有高中阶段学校，包括公立和私立学校
+                    </div>
+                    <div class="impl-item">
+                      <strong>实施时间：</strong>
+                      2025年秋季学期起全面实行周末双休制度
+                    </div>
+                  </div>
+                </div>
+
+                <div class="impl-section">
+                  <h6>具体措施</h6>
+                  <div class="measures-list">
+                    <div class="measure-item">
+                      <div class="measure-icon">🚫</div>
+                      <div class="measure-content">
+                        <h7>严禁补课</h7>
+                        <p>
+                          学校不得在双休日组织任何形式的补课或上新课，除非有特殊审批
+                        </p>
+                      </div>
+                    </div>
+                    <div class="measure-item">
+                      <div class="measure-icon">⏰</div>
+                      <div class="measure-content">
+                        <h7>优化作息时间</h7>
+                        <p>
+                          部分学校调整作息时间，如成都主城区公立高中高一、高二普遍实行双休
+                        </p>
+                      </div>
+                    </div>
+                    <div class="measure-item">
+                      <div class="measure-icon">🧪</div>
+                      <div class="measure-content">
+                        <h7>试点先行</h7>
+                        <p>
+                          部分地区如成都、绵阳等已率先试点双休制度，探索周末自主学习和课外活动的结合
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pilot-cities">
+                  <h6>试点城市情况</h6>
+                  <div class="cities-grid">
+                    <div class="city-item">
+                      <h7>成都</h7>
+                      <p>
+                        主城区公立高中高一、高二普遍实行双休，部分学校开放周末自习室并配备教师答疑
+                      </p>
+                    </div>
+                    <div class="city-item">
+                      <h7>绵阳</h7>
+                      <p>
+                        优化在校作息，增设心理健康课程与文体活动，试点校学生抑郁倾向检出率下降12%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 具体数据图表分析 -->
+            <div class="data-analysis">
+              <h5>具体数据图表分析</h5>
+
+              <div class="analysis-grid">
+                <div class="analysis-item">
+                  <h6>i. 学生睡眠时间</h6>
+                  <div class="sleep-data">
+                    <div class="data-point">
+                      <span class="data-number">6.5</span>
+                      <span class="data-unit">小时</span>
+                      <span class="data-label">平均睡眠时间</span>
+                    </div>
+                    <div class="data-point">
+                      <span class="data-number">40%</span>
+                      <span class="data-label">抑郁检出率</span>
+                    </div>
+                  </div>
+                  <p class="data-source">
+                    数据来源：《2023年度中国精神心理健康蓝皮书》
+                  </p>
+                </div>
+
+                <div class="analysis-item">
+                  <h6>ii. 双休政策实施前后对比</h6>
+                  <div class="before-after">
+                    <div class="before">
+                      <h7>实施前</h7>
+                      <p>学生每周上课6天，平均每天学习时间较长</p>
+                    </div>
+                    <div class="after">
+                      <h7>实施后</h7>
+                      <p>
+                        学生每周上课5天，周末有2天休息时间，学习时间相对减少
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="analysis-item">
+                  <h6>iii. 家长与学生反馈</h6>
+                  <div class="feedback-section">
+                    <div class="feedback-group">
+                      <h7>家长反馈</h7>
+                      <ul>
+                        <li>部分家长支持双休政策，认为有助于学生放松</li>
+                        <li>部分家长担忧孩子学习效果下降</li>
+                      </ul>
+                    </div>
+                    <div class="feedback-group">
+                      <h7>学生反馈</h7>
+                      <ul>
+                        <li>多数学生欢迎双休，认为有利于拓展阅历和丰富生活</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 现实加码 -->
+          <div class="reality-overload">
+            <h4>现实加码：荣县高中</h4>
+
+            <div class="overload-case">
+              <div class="case-alert">
+                <div class="alert-icon">⚠️</div>
+                <h5>荣县第一中学实际情况</h5>
+              </div>
+
+              <div class="overload-details">
+                <div class="schedule-item">
+                  <strong>早上：</strong>
+                  5节课，6点20分起床
+                </div>
+                <div class="schedule-item">
+                  <strong>下午：</strong>
+                  4节课
+                </div>
+                <div class="schedule-item">
+                  <strong>晚上：</strong>
+                  5节课，10点10分才放学
+                </div>
+                <div class="schedule-item">
+                  <strong>周末：</strong>
+                  星期六还要上课
+                </div>
+                <div class="schedule-note">
+                  <p>
+                    <em>
+                      说是自愿课后服务，其实全是强制，教育局也是睁一只眼闭一只眼。
+                    </em>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 对比雷达图 -->
+            <div class="comparison-final">
+              <h5>荣县高中与成都市温江区高中双休政策对比</h5>
+              <div class="radar-chart-section">
+                <div class="chart-controls">
+                  <button
+                    id="wenjiangBtn"
+                    class="control-btn active"
+                    data-school="wenjiang">
+                    <span class="btn-icon">🏫</span>
+                    温江高中
+                  </button>
+                  <button
+                    id="rongxianBtn"
+                    class="control-btn"
+                    data-school="rongxian">
+                    <span class="btn-icon">🏫</span>
+                    荣县中学
+                  </button>
+                </div>
+                <div
+                  id="comparisonRadarChart"
+                  class="chart-container"
+                  style="width: 100%; height: 500px"></div>
+                <div class="chart-description">
+                  <div
+                    id="wenjiangDesc"
+                    class="description-content active">
+                    <h6>🔵 温江高中</h6>
+                    <p>
+                      严格执行双休政策，政策执行度100%，学生满意度85%，家长支持率90%，教师配合度92%，实际效果88%
+                    </p>
+                  </div>
+                  <div
+                    id="rongxianDesc"
+                    class="description-content">
+                    <h6>🔴 荣县中学</h6>
+                    <p>
+                      未能有效执行双休政策，政策执行度仅20%，学生满意度35%，家长支持率45%，教师配合度30%，实际效果25%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 第三部分：数据撕裂的公平假象 -->
+      <section class="torn-fairness-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-number">三</div>
+            <h2>数据撕裂的公平假象：双休如何重塑教育分层</h2>
+            <div class="section-subtitle">
+              <p>
+                以「双休政策」这一看似普适的教育改革为切口，通过追踪数据揭示：当政策遭遇地域差异、家庭资本与教育资源的不均衡分布时，制度设计的公平性承诺正在被系统性消解。标题中"撕裂的公平假象"直指政策在实践中的异化——本应促进教育公平的休息权，反而成为加剧阶层分化的新工具。
+              </p>
+            </div>
+          </div>
+
+          <!-- 故事引入 -->
+          <div class="story-introduction">
+            <h4>真实故事</h4>
+            <div
+              class="story-card"
+              id="storyCard">
+              <div class="story-image-container">
+                <img
+                  src="images/C故事.png"
+                  alt="小赵同学的故事"
+                  class="story-image" />
+                <div class="story-overlay">
+                  <div class="story-preview">
+                    <h5>小赵同学的心声</h5>
+                    <p>一名大二女生的高中抑郁经历</p>
+                    <button class="story-btn">点击查看详情</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第一小节：心理健康的双城记 -->
+          <div class="dual-city-analysis">
+            <h4>一、心理健康的"双城记"：学生减负下的幸福落差</h4>
+
+            <!-- 省重点与县域中学升学率对比 -->
+            <div class="education-disparity">
+              <h5>（一）省重点与县域中学升学率</h5>
+              <div class="disparity-intro">
+                <p>
+                  根据教育部统计，我国有7243所县域高中，占全国普通高中学校的"半壁江山"，但近年来县域中学的升学率整体下滑，部分县中学生考取重点高校的比例较低，甚至有县中多年未能进入清华北大。
+                </p>
+              </div>
+
+              <!-- 全国本科录取率地图 -->
+              <div class="national-map-section">
+                <h6>全国各省2024年本科录取率分布</h6>
+                <div
+                  id="chinaMapChart"
+                  class="chart-container"
+                  style="width: 100%; height: 600px"></div>
+                <div class="map-description">
+                  <p>
+                    <strong>说明：</strong>
+                    将鼠标悬停在地图上的省份，查看该省的详细升学数据。数据来源：教育部2024年全国高考统计
+                  </p>
+                </div>
+              </div>
+
+              <!-- 典型案例对比 -->
+              <div class="case-comparison">
+                <h6>典型案例对比</h6>
+                <div class="comparison-grid">
+                  <div class="case-section county-schools">
+                    <h7>🏫 县域中学代表</h7>
+                    <div class="school-cases">
+                      <div class="school-item">
+                        <h8>淮安市金湖县</h8>
+                        <p>
+                          2023年初中毕业生升学率99.58%，高考保优率107.5%，一本达线率38.3%
+                        </p>
+                      </div>
+                      <div class="school-item">
+                        <h8>隆昌县第七中学</h8>
+                        <p>2023年高考重本上线人数首次突破800人，达到847人</p>
+                      </div>
+                      <div class="school-item">
+                        <h8>湘潭县一中</h8>
+                        <p>近5年本科升学率不低于98%</p>
+                      </div>
+                      <div class="school-item">
+                        <h8>苍南县</h8>
+                        <p>2024年高考成绩显著提升，全市第一</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="case-section provincial-schools">
+                    <h7>🎓 省重点中学代表</h7>
+                    <div class="school-cases">
+                      <div class="school-item highlight">
+                        <h8>湖北省荆州中学</h8>
+                        <p>
+                          2020-2023年本科升学率90%→94%，一本率70%→82%，重本率30%→42%
+                        </p>
+                      </div>
+                      <div class="school-item highlight">
+                        <h8>广东省华师附中</h8>
+                        <p>
+                          高考升学率平均98%以上，每年约20名学生考入清华、北大
+                        </p>
+                      </div>
+                      <div class="school-item highlight">
+                        <h8>成都市第七中学</h8>
+                        <p>2023年本科升学率95%，一本率5%-20%</p>
+                      </div>
+                      <div class="school-item highlight">
+                        <h8>安徽省芜湖市第一中学</h8>
+                        <p>2023年985大学录取率11%，211大学录取率31%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 睡眠时间对比分析 -->
+            <div class="sleep-analysis">
+              <h5>（二）睡眠时间</h5>
+
+              <!-- 政策背景与实施范围 -->
+              <div class="policy-background-sleep">
+                <h6>一、政策背景与实施范围</h6>
+
+                <div class="policy-framework">
+                  <h7>双休政策框架</h7>
+                  <p>
+                    根据教育部2025年发布的全国高中双休政策，高一、高二学生周末不得安排补课或考试，高三可调整为单休（如周六安排不超过2.5小时自习）。政策旨在通过制度设计减轻学生课业负担，保障8小时睡眠时长（教育部推荐标准），并推动教育从"应试导向"向"综合能力培养"转型。
+                  </p>
+                </div>
+
+                <div class="implementation-regions">
+                  <h7>实施地区差异</h7>
+                  <div class="regions-grid">
+                    <div class="region-item fully-implemented">
+                      <h8>已全面推行地区</h8>
+                      <ul>
+                        <li>
+                          <strong>江苏：</strong>
+                          高一高二双休，高三单休
+                        </li>
+                        <li>
+                          <strong>浙江：</strong>
+                          高三仅周六自习
+                        </li>
+                        <li>
+                          <strong>山东：</strong>
+                          全省严禁周末补课
+                        </li>
+                        <li>
+                          <strong>广西：</strong>
+                          2025年3月全面实行
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="region-item pilot-implemented">
+                      <h8>试点或分阶段实施地区</h8>
+                      <ul>
+                        <li>
+                          <strong>河南：</strong>
+                          10所省级示范高中试行
+                        </li>
+                        <li>
+                          <strong>四川：</strong>
+                          名校试行"大小周"
+                        </li>
+                        <li>
+                          <strong>安徽：</strong>
+                          合肥、芜湖试点
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="region-item not-implemented">
+                      <h8>未完全落实地区</h8>
+                      <ul>
+                        <li>
+                          <strong>广东：</strong>
+                          深圳、东莞高三单休为主
+                        </li>
+                        <li>
+                          <strong>河北：</strong>
+                          石家庄目标2025年60%执行率
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 睡眠时长对比 -->
+              <div class="sleep-comparison">
+                <h6>二、睡眠时长对比</h6>
+
+                <div class="sleep-improvement">
+                  <h7>双休政策地区学生睡眠改善</h7>
+                  <div class="improvement-stats">
+                    <div class="stat-item">
+                      <div class="stat-number">6.5→7.2</div>
+                      <div class="stat-label">河南试点日均睡眠时间（小时）</div>
+                    </div>
+                    <div class="stat-item">
+                      <div class="stat-number">65%</div>
+                      <div class="stat-label">北京十一学校睡眠达标率</div>
+                    </div>
+                    <div class="stat-item">
+                      <div class="stat-number">7.8</div>
+                      <div class="stat-label">
+                        江苏某重点高中平均睡眠时长（小时）
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="improvement-details">
+                    <div class="detail-item">
+                      <strong>1、整体提升：</strong>
+                      河南试点双休后，学生日均睡眠时间从6.5小时增至7.2小时，部分学校（如北京十一学校）通过"双休+项目制学习"模式，睡眠达标率提升至65%。
+                    </div>
+                    <div class="detail-item">
+                      <strong>2、极端案例：</strong>
+                      江苏某重点高中试点后，学生平均睡眠时长达到7.8小时，周末补觉时间减少。
+                    </div>
+                    <div class="detail-item">
+                      <strong>3、心理健康关联：</strong>
+                      睡眠改善与抑郁检出率下降显著相关，如浙江试点地区高中生抑郁率从40%降至28%。
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sleep-crisis">
+                  <h7>未实行双休地区睡眠困境</h7>
+                  <div class="crisis-stats">
+                    <div class="stat-item crisis">
+                      <div class="stat-number">6.5</div>
+                      <div class="stat-label">
+                        全国未实行双休高中生平均睡眠（小时）
+                      </div>
+                    </div>
+                    <div class="stat-item crisis">
+                      <div class="stat-number">5.8</div>
+                      <div class="stat-label">广东东莞高三最低睡眠（小时）</div>
+                    </div>
+                  </div>
+
+                  <div class="crisis-details">
+                    <div class="detail-item">
+                      <strong>1、普遍现状：</strong>
+                      全国未实行双休的高中生平均睡眠时长仅6.5小时，部分学校（如广东东莞高三）甚至低至5.8小时。
+                    </div>
+                    <div class="detail-item">
+                      <strong>2、极端作息案例：</strong>
+                      河北某高中学生描述"早6点跑操、晚10点下课"，睡眠不足导致早读课频繁瞌睡，学习效率下降。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 影响因素分析 -->
+              <div class="factors-analysis">
+                <h6>三、影响因素分析</h6>
+
+                <div class="factor-item">
+                  <h7>作业量与课外活动强度</h7>
+                  <div class="factor-comparison">
+                    <div class="factor-side weekend-regions">
+                      <h8>双休地区</h8>
+                      <p>
+                        作业量减少30%-50%，周末以自主探究、社会实践为主。例如，长沙某校推行"周末项目制学习"，学生参与科创活动的比例提升65%。
+                      </p>
+                    </div>
+                    <div class="factor-side non-weekend-regions">
+                      <h8>非双休地区</h8>
+                      <p>
+                        作业量普遍超标，日均有效学习时间达5.2小时（双休地区为6.1小时），且课外活动以补课为主。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="factor-item">
+                  <h7>教育资源分配差异</h7>
+                  <div class="factor-comparison">
+                    <div class="factor-side advantage-regions">
+                      <h8>优势地区</h8>
+                      <p>
+                        双休政策下，高知家庭子女更易获取"周末研学营"等资源，参与国际竞赛比例上升。
+                      </p>
+                    </div>
+                    <div class="factor-side disadvantage-regions">
+                      <h8>弱势地区</h8>
+                      <p>
+                        务工家庭子女因缺乏监管和资源，部分学生陷入"放养"或兼职状态，加剧教育不公平。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="factor-item">
+                  <h7>政策执行力度与配套措施</h7>
+                  <div class="factor-comparison">
+                    <div class="factor-side success-cases">
+                      <h8>成功案例</h8>
+                      <p>
+                        山东通过"云课堂"实现教学效能平移，浙江引入AI助学平台辅助自主学习，缓解家长对成绩下滑的担忧。
+                      </p>
+                    </div>
+                    <div class="factor-side execution-gaps">
+                      <h8>执行漏洞</h8>
+                      <p>
+                        部分地区（如河北沧州）名义上推行双休，但实际通过"自愿留校"变相补课。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 政策效果评估 -->
+              <div class="policy-evaluation">
+                <h6>四、政策效果的多维度评估</h6>
+
+                <div class="evaluation-metrics">
+                  <div class="metric-item positive">
+                    <h7>学习效率提升</h7>
+                    <p>
+                      双休地区学生日均有效学习时间增加17%，注意力和课堂参与度显著提高。例如，北京协和医院研究发现，规律双休学生注意力集中度提升27%。
+                    </p>
+                  </div>
+
+                  <div class="metric-item positive">
+                    <h7>体质与心理健康改善</h7>
+                    <p>
+                      体育达标率从68%（非双休）升至83%（双休），自主探究类学习参与度增长125%；睡眠时间达标的学生，焦虑量表得分平均下降22%。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="social-challenges">
+                  <h7>社会争议与挑战</h7>
+                  <div class="challenge-items">
+                    <div class="challenge-item">
+                      <strong>1、家长分歧：</strong>
+                      7万家长联名反对双休，担忧"时间=分数"逻辑被打破。
+                    </div>
+                    <div class="challenge-item">
+                      <strong>2、阶层分化：</strong>
+                      私立培训机构推出高价"周末规划服务"，进一步拉大城乡差距。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 未来建议 -->
+              <div class="future-recommendations">
+                <h6>五、未来建议</h6>
+                <div class="recommendations-list">
+                  <div class="recommendation-item">
+                    <strong>1、强化监管机制：</strong>
+                    建立动态反馈系统，监测睡眠时长、作业量等核心指标，对违规补课学校追责。
+                  </div>
+                  <div class="recommendation-item">
+                    <strong>2、资源均衡配置：</strong>
+                    推广山东"云课堂"模式，向农村地区开放优质教育资源。
+                  </div>
+                  <div class="recommendation-item">
+                    <strong>3、家校协同优化：</strong>
+                    开展"自主规划工作坊"，帮助学生建立时间管理模型，减少双休后的目标感缺失。
+                  </div>
+                </div>
+              </div>
+
+              <!-- 结论 -->
+              <div class="sleep-conclusion">
+                <h6>结论</h6>
+                <p class="conclusion-text">
+                  双休政策显著改善了高中生的睡眠时长与身心健康，但效果受地区、家庭资源及配套措施影响较大。未实行地区学生仍深陷睡眠不足与高压学习循环，亟需通过制度优化和资源倾斜实现教育公平。政策的长远成功，需平衡"减负"与"提质"，构建兼顾效率与公平的新型教育生态。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 故事弹窗 -->
+      <div id="storyModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="modalTitle">故事详情</h3>
+            <span class="close-btn">&times;</span>
+          </div>
+          <div class="modal-body" id="modalBody">
+            <!-- 内容将通过JavaScript动态插入 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 图片预览模态框 -->
+      <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+          <span class="image-close-btn">&times;</span>
+          <img id="modalImage" class="modal-image" />
+          <div class="image-caption" id="imageCaption"></div>
+        </div>
+      </div>
+      </section>
+
+      <!-- 第四部分：突围与重构 -->
+      <section class="section breakthrough-section">
+        <h2 class="section-title">四、突围与重构：如何让双休不止于"政策口号"</h2>
+
+        <!-- 从"唯分数"论到"成长力"的破局常识 -->
+        <div class="breakthrough-analysis">
+          <h3>1. 从"唯分数"论到"成长力"的破局常识</h3>
+
+          <!-- 职教分流 -->
+          <div class="vocational-education">
+            <h4>（1）职教分流，注重学生个性化发展</h4>
+            
+            <div class="vocational-content">
+              <div class="vocational-image">
+                <img src="images/D1.PNG" alt="职教分流个性化发展" class="content-image" />
+              </div>
+              
+              <div class="vocational-strategies">
+                <div class="strategy-item">
+                  <h5>1）畅通升学通道</h5>
+                  <p>试点"中职-高职-本科"贯通培养，打破职教学历天花板，减少"普职分流"焦虑。</p>
+                </div>
+                
+                <div class="strategy-item">
+                  <h5>2）课程灵活设计</h5>
+                  <p>推行"基础+拓展"选课制，允许学生根据兴趣选择艺术、科技等模块课程。</p>
+                </div>
+                
+                <div class="strategy-item">
+                  <h5>3）评价机制改革</h5>
+                  <p>将社会实践、创新能力纳入综合素质评价，替代单一分数考核，试点"三位一体"招生模式。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="core-logic">
+              <h5>核心逻辑</h5>
+              <p>通过政策刚性约束与资源柔性调配结合，推动教育从"筛选"转向"培育"，让职教分流成为适配个体潜能的路径，而非被动分层。</p>
+            </div>
+          </div>
+
+          <!-- 社会观念转变 -->
+          <div class="social-transformation">
+            <h4>（2）社会观念的转变，构建多元教育生态圈</h4>
+            
+            <div class="transformation-content">
+              <div class="transformation-image">
+                <img src="images/D2.PNG" alt="多元教育生态圈" class="content-image" />
+              </div>
+              
+              <div class="transformation-details">
+                <div class="transformation-item">
+                  <h5>破除"分数崇拜"</h5>
+                  <p>宣传职业教育成功案例，重塑社会对教育价值的认知。</p>
+                </div>
+                
+                <div class="success-case">
+                  <h5>成功案例</h5>
+                  <p>成都成华区"大德育生态圈"模式，通过校家社协同育人，让学生在真实场景中成长，增强社会对多元教育的直观认同。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 课程设计与教学方式改革 -->
+        <div class="curriculum-reform">
+          <h3>2. 课程设计与教学方式改革</h3>
+
+          <!-- 综合素质评价 -->
+          <div class="comprehensive-evaluation">
+            <h4>（1）综合素质评价，试点三位一体（教育、科技、人才）招生模式</h4>
+            <p class="evaluation-note">参考浙江省三位一体的招生模式，不断优化招生政策和管理措施</p>
+          </div>
+
+          <!-- 考试内容变革 -->
+          <div class="exam-reform">
+            <h4>（2）考试内容变革，注重综合运用能力</h4>
+            
+            <div class="reform-content">
+              <div class="reform-image">
+                <img src="images/D3.PNG" alt="考试内容变革" class="content-image" />
+              </div>
+              
+              <div class="reform-strategies">
+                <div class="reform-item">
+                  <h5>1）分阶段试点</h5>
+                  <p>先从低年级或地方考试入手，逐步推广至全国性考试。</p>
+                </div>
+                
+                <div class="reform-item">
+                  <h5>2）教师培训</h5>
+                  <p>加强教师在命题设计、批判性思维培养及跨学科整合方面的能力。</p>
+                </div>
+                
+                <div class="reform-item">
+                  <h5>3）社会宣传</h5>
+                  <p>通过媒体宣传改革案例，引导家长和社会理解综合能力评价的重要性。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 第五部分：总结 -->
+      <section class="section conclusion-section">
+        <h2 class="section-title">五、总结</h2>
+        
+        <div class="final-conclusion">
+          <div class="conclusion-vision">
+            <h3>🌟 教育愿景</h3>
+            <p>从"分数囚徒"回归"成长主体"，让每个孩子在自由探索中激发创造力，找到他（她）们独特天赋的生长空间，而非被统一模具塑造。</p>
+          </div>
+
+          <div class="conclusion-goal">
+            <h3>🎯 终极目标</h3>
+            <p>我们希望打破"教育军备竞赛"的恶性循环，让教育回归育人本质，为创新型社会储备多元人才，最终实现"人"的解放与社会的可持续发展。</p>
+          </div>
+
+          <div class="conclusion-call">
+            <h3>📢 行动呼吁</h3>
+            <p>双休政策不应仅仅是时间表的调整，而应成为教育理念革新的起点。只有当我们真正从制度、观念、实践三个层面同步推进改革，才能让每一个孩子都能在适合自己的教育道路上茁壮成长。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 引入图表JavaScript文件 -->
+    <script src="chart.js"></script>
+    <script src="data-charts.js"></script>
+    <script src="story-modal.js"></script>
+    <script src="timeline.js"></script>
+    <script src="image-preview.js"></script>
+  </body>
+</html>
